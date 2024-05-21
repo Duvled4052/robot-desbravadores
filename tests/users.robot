@@ -3,7 +3,8 @@ Documentation    Esse arquivo possui os casos de teste de cadastro de usuários
 Resource    ../resources/main.robot
 
 *** Test Cases ***
-CT01 - cadastrar usuário com sucesso
+CT01 - cadastrar usuário com 
+    [Tags]    CT01
     Keyword login com sucesso
     Clicar em cadastros
     Clicar na aba usuários

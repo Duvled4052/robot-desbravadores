@@ -23,7 +23,7 @@ Clicar na aba usuários
 Clicar em novo cadastro
     Wait Until Element Is Visible    ${BOTÃO_NOVO_CADASTRO}
     Click Element    ${BOTÃO_NOVO_CADASTRO}
-    Wait Until Element Is Visible    ${INPUT_FULLNAME}
+    Wait Until Element Is Visible    ${BOTÃO_SALVAR_CADASTRO}
     Capture Page Screenshot    modal_abert.png
 
 Keyword logar e ir até cadastro de usuários
@@ -54,8 +54,8 @@ preencher modal confirmpassword
 
 
 # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-Clicar no botão salvar usuário
-    Click Element    ${BOTÃO_SALVAR_NOVO_USUÁRIO}
+Clicar no botão salvar cadastro
+    Click Element    ${BOTÃO_SALVAR_CADASTRO}
 
 Página deve conter msg name vazio
     Wait Until Element Is Visible    ${MSG_NAME_OBRIGATÓRIO}    5

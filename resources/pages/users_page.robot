@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Este arquivo contém o mapeamento dos elementos da página home
+Documentation    Este arquivo contém o mapeamento dos elementos da página home relacionados ao cadastro de diretorias
 
 *** Variables ***
 ${ABA_CADASTROS}    //*[@id="Cadastros"]
@@ -13,7 +13,7 @@ ${INPUT_CPF}    //input[@name="cpf"]
 ${INPUT_PASSWORD}    //input[@name="password"]
 ${INPUT_CONFIRM_PASSWORD}    //input[@name="confirmPassword"]
 
-${BOTÃO_SALVAR_NOVO_USUÁRIO}    //button[@id="save"]
+${BOTÃO_SALVAR_CADASTRO}    //button[@id="save"]
 # mask[id="path-1-inside-1_1126_35789"]
 
 ${MSG_NAME_OBRIGATÓRIO}    //p[contains(text(), "O campo nome completo é obrigatório")]

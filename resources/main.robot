@@ -11,8 +11,10 @@ Resource    data/cadastro_usuário.robot
 
 Resource    keywords/login_kws.robot
 Resource    keywords/users_kws.robot
+Resource    keywords/diretoria_kws.robot
 
 Resource    pages/login_page.robot
 Resource    pages/users_page.robot
+Resource    pages/diretoria_page.robot
 
 Resource    utils/keywords_utils.robot
