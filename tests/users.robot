@@ -3,7 +3,7 @@ Documentation    Esse arquivo possui os casos de teste de cadastro de usuários
 Resource    ../resources/main.robot
 
 *** Test Cases ***
-CT01 - cadastrar usuário com 
+CT01 - cadastrar usuário com sucesso
     [Tags]    CT01
     Keyword login com sucesso
     Clicar em cadastros
@@ -15,7 +15,7 @@ CT01 - cadastrar usuário com
     Preencher modal cpf
     Preencher modal password
     preencher modal confirmpassword
-    Clicar no botão salvar usuário
+    Clicar no botão salvar cadastro
 
     # validação
 
@@ -27,7 +27,7 @@ CT02 - cadastrar usuário nome vazio
     Preencher modal cpf
     Preencher modal password
     preencher modal confirmpassword
-    Clicar no botão salvar usuário
+    Clicar no botão salvar cadastro
     Página deve conter msg name vazio
 
 CT03 - cadastrar usuário email vazio
@@ -38,7 +38,7 @@ CT03 - cadastrar usuário email vazio
     Preencher modal cpf
     Preencher modal password
     preencher modal confirmpassword
-    Clicar no botão salvar usuário
+    Clicar no botão salvar cadastro
     Página deve conter msg email vazio
 
 CT04 - cadastrar usuário pa vazio
@@ -49,7 +49,7 @@ CT04 - cadastrar usuário pa vazio
     Preencher modal cpf
     Preencher modal password
     preencher modal confirmpassword
-    Clicar no botão salvar usuário
+    Clicar no botão salvar cadastro
     Página deve conter msg pa vazio
 
 CT05 - cadastrar usuário cpf vazio
@@ -60,7 +60,7 @@ CT05 - cadastrar usuário cpf vazio
     # Preencher modal cpf
     Preencher modal password
     preencher modal confirmpassword
-    Clicar no botão salvar usuário
+    Clicar no botão salvar cadastro
     Página deve conter msg cpf vazio
 
 CT06 - cadastrar usuário senha vazio
@@ -71,7 +71,7 @@ CT06 - cadastrar usuário senha vazio
     Preencher modal cpf
     # Preencher modal password
     preencher modal confirmpassword
-    Clicar no botão salvar usuário
+    Clicar no botão salvar cadastro
     Página deve conter msg senha vazio
 
 CT07 - cadastrar usuário confirmar senha vazio
@@ -82,5 +82,5 @@ CT07 - cadastrar usuário confirmar senha vazio
     Preencher modal cpf
     Preencher modal password
     # preencher modal confirmpassword
-    Clicar no botão salvar usuário
+    Clicar no botão salvar cadastro
     Página deve conter msg confirmar senha vazio

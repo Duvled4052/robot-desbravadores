@@ -15,7 +15,7 @@ Keyword logar e ir até cadastro de diretorias
     Clicar em novo cadastro
 
 Preencher modal diretoria
-    Preencher Campo    ${INPUT_DIRETORIA}    Nomediretoria
+    Preencher Campo    ${INPUT_DIRETORIA}    ${DIRETORIA_NOME}
 
 Página deve conter msg de diretoria obrigatório
     Element Should Be Visible    ${MSG_DIRETORIA_OBRIGATÓRIO}    5

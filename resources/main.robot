@@ -8,6 +8,7 @@ Library    SeleniumLibrary
 Resource    data/credenciais_usuario.robot
 Resource    data/variables_config.robot
 Resource    data/cadastro_usuário.robot
+Resource    data/cadastro_diretoria.robot
 
 Resource    keywords/login_kws.robot
 Resource    keywords/users_kws.robot
