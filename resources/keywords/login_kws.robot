@@ -59,3 +59,5 @@ Página contém ambas as mensagens de campo
 # Pagina contem elemento logout
 #     Page Should Contain    text
 
+Fazer logout
+    Click Element    //button[contains(text(), "Logout")]

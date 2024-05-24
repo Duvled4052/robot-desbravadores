@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Esse arquivo possui as keywords de cadastro de usuário - vão ser puxadas pelo users.robot
 Resource    ../main.robot
+# Resource    ../../../robot-web-desbravadores/resources/shared/utils_keywords.robot
 
 *** Keywords ***
 Keyword login com sucesso
@@ -35,15 +36,18 @@ Keyword logar e ir até cadastro de usuários
 
 # preencher certo
 Preencher modal name
+    [Arguments]    ${CADASTRO_NAME}
     Preencher Campo    ${INPUT_FULLNAME}    ${CADASTRO_NAME}
 
 Preencher modal email
+    [Arguments]    ${CADASTRO_EMAIL}
     Preencher Campo    ${INPUT_EMAIL}    ${CADASTRO_EMAIL}
 
 Preencher modal pa
     Preencher Campo    ${INPUT_ACESSPROFILE}    ${CADASTRO_PA}
 
 Preencher modal cpf
+    [Arguments]    ${CADASTRO_CPF}    
     Preencher Campo    ${INPUT_CPF}    ${CADASTRO_CPF}
 
 Preencher modal password
@@ -55,6 +59,7 @@ preencher modal confirmpassword
 
 # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 Clicar no botão salvar cadastro
+    Capture Page Screenshot    modal_preenchido.png
     Click Element    ${BOTÃO_SALVAR_CADASTRO}
 
 Página deve conter msg name vazio
@@ -81,3 +86,8 @@ Página deve conter msg confirmar senha vazio
     Wait Until Element Is Visible    ${MSG_CONFIRMAR_SENHA_OBRIGATÓRIO}    5
     Page Should Contain Element    ${MSG_CONFIRMAR_SENHA_OBRIGATÓRIO}
 
+Fazer login de novo usuário
+    [Arguments]    ${CADASTRO_EMAIL}
+    Preencher Campo    ${CAMPO_EMAIL}    ${CADASTRO_EMAIL}
+    Preencher Campo    ${CAMPO_SENHA}    ${CADASTRO_PASSWORD}
+    Clicar no botão

@@ -4,6 +4,7 @@ Documentation    Esse arquivo contém a importação das libraries, keywords, pa
 # Suite Teardown    Close Browser
 
 Library    SeleniumLibrary
+Library    FakerLibrary
 
 Resource    data/credenciais_usuario.robot
 Resource    data/variables_config.robot
