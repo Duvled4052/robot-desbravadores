@@ -54,10 +54,5 @@ Página contém ambas as mensagens de campo
     Element Should Be Visible    ${MSGS_CAMPO_OBRIGATORIO}
     Capture Page Screenshot    campos_vazios.png
 
-
-
-# Pagina contem elemento logout
-#     Page Should Contain    text
-
 Fazer logout
     Click Element    //button[contains(text(), "Logout")]

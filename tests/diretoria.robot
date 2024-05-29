@@ -4,9 +4,14 @@ Resource    ../resources/main.robot
 
 *** Test Cases ***
 CT01 - Cadastrar diretoria com sucesso
+    ${DIRETORIA_NOME}    FakerLibrary.Name
     Keyword logar e ir até cadastro de diretorias
-    Preencher modal diretoria
+    Preencher modal diretoria    ${DIRETORIA_NOME}
     Clicar no botão salvar cadastro
+
+    Ir até última página de diretorias
+    sleep    5s
+    Última diretoria é a cadastrada    ${DIRETORIA_NOME}
 
 CT02 - Input diretoria vazio
     Keyword logar e ir até cadastro de diretorias

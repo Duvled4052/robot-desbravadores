@@ -7,4 +7,4 @@ Resource    ../main.robot
 ${URL_LOGIN}    https://automacao.qacoders-academy.com.br/login
 ${URL_HOME}    https://automacao.qacoders-academy.com.br/home
 
-${NAVEGADOR}    edge
+${NAVEGADOR}    headlesschrome
